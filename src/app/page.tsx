@@ -16,9 +16,9 @@ export default function Home() {
         zIndex: 0
       }}>
         <Beams
-          beamWidth={0.9}
+          beamWidth={3}
           beamHeight={25}
-          beamNumber={26}
+          beamNumber={24}
           lightColor="#ffffff"
           speed={2}
           noiseIntensity={1.85}
@@ -28,13 +28,20 @@ export default function Home() {
       </div>
       
       {/* Content overlay */}
+      
       <main className="wrap" style={{ position: 'relative', zIndex: 1 }}>
-        <div className="hero">
-         <Image src={Logo} alt="BlackGrid Logo" width={200} />
-          <h1 className="title">BLACKGRID</h1>
-          <p className="sub">COMING SOON</p>
-          <p className="contact">Reach us out: <a href="mailto:contact@blackgrid.in?subject=consultation">contact@blackgrid.in</a></p>
+        <div style={{ position: 'absolute', left: '51.17px', top: '51.17px' }}>
+          <Image src={Logo} alt="BlackGrid Logo" width={63.997} height={73} /> 
         </div>
+
+        <div style={{ position: 'absolute', left: '51px', top: '700px', color: 'white', fontSize: 29.79, fontFamily: 'Inter', fontWeight: '700', wordWrap: 'break-word' }}>ABOUT<br/>CONTACT<br/>MEDIA HANDLE<br/>TEAM</div>
+
+
+
+
+
+          <h1 className="title">BLACKGRID</h1>
+          
       </main>
     </>
   );

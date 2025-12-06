@@ -74,10 +74,16 @@ body {
 }
 
 .title {
-  font-weight: 800;
-  letter-spacing: 0.45em;
-  text-indent: 0.45em;
-  font-size: clamp(16px, 3vw, 28px);
+  color: #FFF;
+font-family: 'Inter', sans-serif;
+font-size: 158.042px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -4px;
+  
+
+
 }
 .sub {
   color: var(--muted);
