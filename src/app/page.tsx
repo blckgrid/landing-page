@@ -30,11 +30,11 @@ export default function Home() {
       {/* Content overlay */}
       
       <main className="wrap" style={{ position: 'relative', zIndex: 1 }}>
-        <div style={{ position: 'absolute', left: '51.17px', top: '51.17px' }}>
+        <div style={{ position: 'absolute', left: '51px', top: '51px' }}>
           <Image src={Logo} alt="BlackGrid Logo" width={63.997} height={73} /> 
         </div>
 
-        <div style={{ position: 'absolute', left: '51px', top: '700px', color: 'white', fontSize: 29.79, fontFamily: 'Inter', fontWeight: '700', wordWrap: 'break-word' }}>
+        <div style={{ position: 'absolute', left: '51px', bottom: '73px', color: 'white', fontSize: 29.79, fontFamily: 'Inter', fontWeight: '700', wordWrap: 'break-word' }}>
           <a href="https://google.com" className="nav-item">ABOUT</a>
           <div className="nav-item">CONTACT</div>
           <div className="nav-item">MEDIA HANDLE</div>
