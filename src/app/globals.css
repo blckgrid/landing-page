@@ -98,3 +98,28 @@ letter-spacing: -4px;
 .contact a:hover {
   text-decoration: underline;
 }
+
+.nav-item {
+  color: white;
+  cursor: pointer;
+  position: relative;
+  display: block;
+  width: fit-content;
+  margin-bottom: 4px;
+  text-decoration: none; /* Ensure no default underline for links */
+}
+
+.nav-item::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transition: width 0.3s ease-out;
+}
+
+.nav-item:hover::after {
+  width: 100%;
+}

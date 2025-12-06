@@ -34,7 +34,12 @@ export default function Home() {
           <Image src={Logo} alt="BlackGrid Logo" width={63.997} height={73} /> 
         </div>
 
-        <div style={{ position: 'absolute', left: '51px', top: '700px', color: 'white', fontSize: 29.79, fontFamily: 'Inter', fontWeight: '700', wordWrap: 'break-word' }}>ABOUT<br/>CONTACT<br/>MEDIA HANDLE<br/>TEAM</div>
+        <div style={{ position: 'absolute', left: '51px', top: '700px', color: 'white', fontSize: 29.79, fontFamily: 'Inter', fontWeight: '700', wordWrap: 'break-word' }}>
+          <a href="https://google.com" className="nav-item">ABOUT</a>
+          <div className="nav-item">CONTACT</div>
+          <div className="nav-item">MEDIA HANDLE</div>
+          <div className="nav-item">TEAM</div>
+        </div>
 
 
 
