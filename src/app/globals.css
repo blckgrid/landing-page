@@ -76,7 +76,7 @@ body {
 .title {
   color: #FFF;
 font-family: 'Inter', sans-serif;
-font-size: 158.042px;
+font-size: clamp(68.96px, 10vw, 158px);
 font-style: normal;
 font-weight: 700;
 line-height: normal;
