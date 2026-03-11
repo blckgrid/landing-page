@@ -6,7 +6,6 @@ import Beams from './Beams';
 export default function Home() {
   return (
     <>
-      {/* Full page Beams background */}
       <div style={{ 
         position: 'fixed',
         top: 0,
