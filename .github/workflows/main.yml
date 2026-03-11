@@ -1,0 +1,28 @@
+name: Gemini AI Code Review
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+permissions:
+  contents: read
+  pull_requests: write
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Gemini Code Review
+        uses: sshnaidm/gemini-code-review-action@v2
+        with:
+          gemini-key: ${{ secrets.GEMINI_API_KEY }}
+          # You can use 'gemini-1.5-flash' for speed/cost or 'gemini-1.5-pro' for depth
+          model: 'gemini-2.5-pro'
+          # Reviewdog reporter: 'github-pr-review' posts comments on lines
+          # 'github-pr-check' adds them to the Checks tab
+          reporter: 'github-pr-review'
+          level: 'warning'
+          # Optional: Filter mode ('added' only reviews new lines)
+          filter_mode: 'added'
