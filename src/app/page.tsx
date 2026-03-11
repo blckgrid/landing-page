@@ -29,11 +29,7 @@ export default function Home() {
       {/* Content overlay */}
       
       <main className="wrap" style={{ position: 'relative', zIndex: 1 }}>
-        <div style={{ position: 'absolute', left: '51px', top: '51px' }}>
-          <Image src={Logo} alt="BlackGrid Logo" width={63.997} height={73} /> 
-        </div>
-
-        <div style={{ position: 'absolute', left: '51px', bottom: '73px', color: 'white', fontSize: 29.79, fontFamily: 'Inter', fontWeight: '700', wordWrap: 'break-word' }}>
+        <div style={{ position: 'absolutreak-word' }}>
           <a href="https://google.com" className="nav-item">ABOUT</a>
 
 
