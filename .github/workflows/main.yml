@@ -19,7 +19,7 @@ jobs:
         with:
           gemini-key: ${{ secrets.GEMINI_API_KEY }}
           # Note: Use 'gemini-1.5-pro' or 'gemini-1.5-flash'
-          model: 'gemini-2.5-pro' 
+          model: 'gemini-1.5-pro' 
           reporter: 'github-pr-review'
           level: 'warning'
           filter_mode: 'added'
