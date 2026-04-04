@@ -1,125 +1,39 @@
-:root {
-  --ink: #222222;
-  --ash: #f5f5f5;
-  --muted: #a3a3a3;
+@font-face {
+  font-family: 'Boska';
+  src: url('/Boska-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Boska';
+  src: url('/Boska-Regular.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
 }
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html,
 body {
-  height: 100%;
-  background-color: #161616;
-}
-
-body {
-  margin: 0;
-  background-color: #161616;
-  color: var(--ash);
-  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
-    Inter, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  background-color: #ffffff;
+  color: #000000;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.bg-ink {
-  background-color: var(--ink);
-}
-.text-ash {
-  color: var(--ash);
-}
-.min-h-screen {
-  min-height: 100vh;
-}
-.grid {
-  display: grid;
-}
-.place-items-center {
-  place-items: center;
-}
-.p-6 {
-  padding: 24px;
+@keyframes ticker-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
-.wrap {
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
-  padding: 48px 24px;
-}
-.hero {
-  display: grid;
-  gap: 20px;
-  justify-items: center;
-  position: relative;
-  z-index: 2;
-}
-
-.mark {
-  width: clamp(160px, 32vw, 320px);
-  height: auto;
-  display: block;
-}
-.edge {
-  stroke: rgba(255, 255, 255, 0.9);
-}
-.hidden-edge {
-  stroke: rgba(255, 255, 255, 0.25);
-  stroke-dasharray: 3 4;
-}
-.nodes circle {
-  fill: rgba(255, 255, 255, 0.85);
-}
-
-.title {
-  color: #FFF;
-font-family: 'Inter', sans-serif;
-font-size: clamp(68.96px, 10vw, 158px);
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: -4px;
-  
-
-
-}
-.sub {
-  color: var(--muted);
-  letter-spacing: 0.35em;
-  text-indent: 0.35em;
-  font-size: 12px;
-}
-.contact a {
-  color: white;
-  text-decoration: underline;
-}
-.contact a:hover {
-  text-decoration: underline;
-}
-
-.nav-item {
-  color: white;
-  cursor: pointer;
-  position: relative;
-  display: block;
-  width: fit-content;
-  margin-bottom: 4px;
-  text-decoration: none; /* Ensure no default underline for links */
-}
-
-.nav-item::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: white;
-  transition: width 0.3s ease-out;
-}
-
-.nav-item:hover::after {
-  width: 100%;
+.ticker-track {
+  display: flex;
+  white-space: nowrap;
+  animation: ticker-scroll 22s linear infinite;
 }
